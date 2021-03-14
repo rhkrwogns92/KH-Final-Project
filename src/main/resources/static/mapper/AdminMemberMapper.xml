@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.iei.hotel.adminMember.mapper.AdminMemberMapper">
+	
+	<select id="adminTotalSize" resultType='int' >
+		SELECT COUNT(membernumber) FROM  member WHERE  membernumber is not null 
+		
+		<include refid="search"/>		
+	</select>	
+	
+	
+	
+	<select id="adminMemberList" resultType='kr.iei.hotel.adminMember.dto.AdminMemberDto' >
+	  <![CDATA[
+	 	SELECT * FROM (
+        	SELECT ROWNUM no, m.* FROM 
+        	( 
+        	
+        		SELECT * FROM member WHERE  membernumber is not null  
+ 	  ]]>        		
+        		 <include refid="search"/>
+      <![CDATA[  		
+        		ORDER BY membernumber DESC        		
+        	) m             	          
+		) WHERE no BETWEEN #{startNo} AND #{endNo} 		
+	  ]]>
+	</select>
+	
+	
+	<sql id="search">
+	    <if test="selectBox !=null">
+	            <if test="selectBox == 'memberEmail'.toString()">
+	                AND memberEmail like '%' || #{findStr} || '%'
+	            </if>
+	     
+	            <if test="selectBox == 'memberName'.toString()">
+	                AND memberName like '%' || #{findStr} || '%'
+	            </if>
+
+	            <if test="selectBox == 'memberNick'.toString()">
+	                AND memberNick like '%' || #{findStr} || '%'
+	            </if>
+	     
+	            <if test="selectBox == 'memberPhone'.toString()">
+	                AND memberPhone like  '%' || #{findStr} || '%'
+	            </if>
+	             
+	            <if test="selectBox == 'total'.toString()">
+	                AND 
+	                ( 	                  	
+	                   memberEmail like '%' || #{findStr} || '%'	  	OR               
+	                   memberName like '%' || #{findStr} || '%'		OR
+	                   memberNick like '%' || #{findStr} || '%'		OR
+	                   memberPhone like '%' || #{findStr} || '%'	
+	                )
+	            </if>
+	             
+	    </if>
+	</sql>
+ 
+ 
+	  <update id="memberGradeUpdate">
+		UPDATE member SET 	
+			  memberGrade= #{memberGrade}		 
+		 WHERE memberEmail = #{memberEmail}
+	  </update>
+
+
+</mapper>

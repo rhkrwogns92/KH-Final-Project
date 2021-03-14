@@ -1,0 +1,99 @@
+@charset "UTF-8";
+        .hotelHugWrap {
+            font-family: 'Noto Sans', sans-serif;
+            padding-top: 50px;
+            font-size: 14px;
+            width: 1280px;
+            padding: 0 80px;
+            margin: 0 auto;
+        }
+        .hotelHugWrap > .buttonTitle {
+            padding: 110px 0 110px;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 40px;
+            color: #193f6e;
+            text-align: center;
+
+        }
+        .hotelHugWrap .buttonTitle p{
+            padding-top: 20px;
+        }
+
+        .hotelHugWrap .textArea {
+            border: 1px solid #193f6e;
+            padding: 16px;
+            width: 84%;
+            font-size: 20px;
+            padding-bottom: 24px;
+            padding-top: 18px;
+        }
+        .hotelHugWrap .buttonArea {
+            background: white;
+            padding: 25px 72px;
+            color: #193f6e;
+            border: 1px solid #193f6e;
+            font-weight: bold;
+            margin-bottom: 110px;
+        }
+        .hotelHugWrap .buttonArea:hover {         
+            color: white;
+            background: #193f6e;
+        }
+        .hotelHugWrap > h3 {
+            text-align: center;
+            margin-top: 110px;
+        }
+
+
+        .hotelHugWrap .reservationInfo {
+            width: 100%;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .hotelHugWrap .reservationInfo .reservationWrap {
+            position: absolute;
+        }
+        .hotelHugWrap .reservationInfo .buttonWrap {
+            position: relative;
+		left: 965px;
+    /* padding: 62px 31px 42px; */
+    padding: 61px;
+            
+        }
+        .hotelHugWrap .reservationInfo .buttonWrap a {
+            text-decoration: none;
+            color: #193f6e;
+            border: 1px solid #193f6e;
+            padding: 59px;
+        }
+        .hotelHugWrap .reservationInfo .buttonWrap a:hover {
+            color: white;
+            background: #193f6e;
+        }
+
+        .hotelHugWrap .reservationInfo th {
+            border: 1px solid #193f6e;
+            padding: 22px;
+            background: #bedae8;
+            color: #193f6e;
+
+        }
+        .hotelHugWrap .reservationInfo td{
+            border: 1px solid #193f6e;
+            padding: 10px;
+            background: white;
+            color: #193f6e;
+
+        }
+        .hotelHugWrap .reservationInfo .lengthUp {
+            width: 226px;
+            text-align: center;
+        }
+        .hotelHugWrap .reservationInfo .lengthSort {
+                width: 114px;
+            text-align: center;
+        }
+        .hotelHugWrap .searchArea {
+            margin-bottom: -78px;
+        }

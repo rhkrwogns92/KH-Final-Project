@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.hotelHugWrap {
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 50px;
+    font-size: 14px;
+    width: 1280px;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+.hotelHugWrap > .buttonTitle {
+    padding: 40px 0;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #193f6e;
+    text-align: center;
+
+}
+.hotelHugWrap input {
+	border: 1px solid #193f6e;
+	text-align: center;
+	width: 61.7%;
+    padding: 10px 264px;
+	margin: 0 217px;
+}
+.hotelHugWrap textarea {
+	border: 1px solid #193f6e;
+	text-align: center;
+	margin: 0 217px;
+}
+.hotelHugWrap label {
+	display: block;
+	margin: 20px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hotelHugWrap .tourismAddButton {
+    margin-top: 30px;
+    margin-bottom: 110px;
+    background: white;
+    font-size: 23px;
+    font-weight: 500;
+}
+.hotelHugWrap .tourismAddButton:hover {
+	background: #193f6e;
+	color: white;
+}
+.hotelHugWrap .images {
+	border: 0;
+}
+

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+.hotelHugDetailWrap {
+    font-size: 14px;
+    width: 1280px;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+.hotelHugDetailWrap>.contDetailTitle {
+    padding: 60px 0 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hotelHugDetailWrap>.contDetailTitle>.titleBig {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    color: #193f6e;
+    margin-bottom: 2.5rem;
+}
+
+
+/* .hotelHugDetailWrap>.contDetailTitle>.titleSmall {
+    font-size: 25px;
+    color: #193f6e;
+    margin-bottom: 2.5rem;
+} */
+
+.hotelHugDetailWrap>.imageArea {}
+
+.hotelHugDetailWrap>.imageArea>.slides img {
+    width: 1120px;
+    height: 496px;
+    /* width: 300px; */
+    /* height: 300px; */
+    transition: transform 1s linear;
+}
+
+.hotelHugDetailWrap>.imageArea>.slides img:hover {
+	transform: scale(1.1);
+}
+
+.imageArea {
+    position: relative;
+    width: 1120px;
+    margin: 0 auto;
+    height: 496px;
+    /* width: 2104px; */
+    overflow: hidden;
+}
+
+.slides {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* width: 4600px; */
+    transition: left 0.5s ease-out;
+}
+
+.slides li:not(:last-child) {
+    float: left;
+    margin-right: 30px;
+}
+
+.slides>li {
+    list-style: none;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.controls a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+    color: #72a5d3;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 7px;
+    /* transition: background-color 0.6s ease; */
+}
+
+.dot.on {
+    background: #72a5d3;
+}
+
+.prev {
+    margin-right: 500px;
+}
+
+.next {
+    margin-left: 500px;
+}
+
+.detailInfo {
+    height: 150px;
+}
+
+.detailInfo ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.detailInfo ul li {
+    width: 33%;
+    float: left;
+    margin: 40px 0;
+}
+
+.detailInfo ul li dl {
+    padding-top: 0;
+    padding-left: 30px;
+}
+
+.detailInfo ul li dl dt {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.detailInfo ul li dl dd {
+    font-size: 18px;
+}
+
+.operatingHours {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.operatingHours-Info {
+    border-top: 1px solid black;
+    text-align: center;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.operatingHours-Info th,
+.operatingHours-Info td {
+    text-align: center;
+    font-size: 17px;
+    padding: 15px 20px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.guide1 {
+    margin-top: 14px;
+    margin-bottom: 80px;
+    position: relative;
+    color: red;
+    padding-left: 16px;
+    font-size: 16px;
+}

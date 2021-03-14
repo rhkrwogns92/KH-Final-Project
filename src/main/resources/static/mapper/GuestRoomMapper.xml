@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="kr.iei.hotel.guestroom.mapper.GuestRoomMapper">
+ 	<sql id="guestRoomColumns">
+ 		  guestRoomName
+ 		, guestRoomContents1
+ 		, guestRoomContents2
+ 		, guestRoomService1
+ 		, guestRoomService2
+ 		, guestRoomAmenity
+ 		, guestRoomInformation
+ 		, guestRoomImage1
+ 		, guestRoomImage2
+ 		, guestRoomImage3
+ 		, guestRoomImage4
+ 	</sql>
+ 	<sql id="guestRoomInfoColumns">
+ 		  guestRoomNo
+ 		, guestRoomName
+ 		, guestRoomPrice
+ 		, guestRoomView
+ 		, guestRoomArea
+ 		, guestRoomBedType
+ 		, standardPersonnel
+ 		, adultPrice
+ 		, childPrice
+ 		, standardNo
+ 	</sql>
+ 	<!-- 객실 리스트 -->
+ 	<select id="guestRoomList" resultType="kr.iei.hotel.guestroom.vo.GuestRoomVO" parameterType="int">
+ 		SELECT *
+ 		FROM guestRoom
+ 		JOIN guestRoomInfo
+ 		ON guestRoom.guestRoomName = guestRoomInfo.guestRoomName
+ 		WHERE guestRoomInfo.standardNo = #{standardNumber}
+ 	</select>
+ 	<!-- 객실 상세 리스트 -->
+ 	<select id="guestRoomDetailList" resultType="kr.iei.hotel.guestroom.vo.GuestRoomVO" parameterType="kr.iei.hotel.guestroom.vo.GuestRoomVO">
+ 		SELECT *
+ 		FROM guestRoom
+ 		JOIN guestRoomInfo
+ 		ON guestRoom.guestRoomName = guestRoomInfo.guestRoomName
+ 		WHERE guestRoomInfo.standardNo = #{standardNo}
+ 		AND guestRoom.guestRoomName = #{guestRoomName}
+ 	</select>
+ 	<!-- 객실 관리 리스트 -->
+ 	<select id="guestRoomAdminList" resultType="kr.iei.hotel.guestroom.vo.GuestRoomVO">
+ 		SELECT *
+ 		FROM guestRoom
+ 	</select>
+ 	<!-- 객실 추가 -->
+ 	<insert id="guestRoomInsert" parameterType="kr.iei.hotel.guestroom.vo.GuestRoomVO">
+		INSERT INTO
+		guestRoom (
+			<include refid="guestRoomColumns"/>
+		) VALUES (
+			  #{guestRoomName}
+			, #{guestRoomContents1}
+			, #{guestRoomContents2}
+			, #{guestRoomService1}
+			, #{guestRoomService2}
+			, #{guestRoomAmenity}
+			, #{guestRoomInformation}
+			, #{guestRoomImage1}
+			, #{guestRoomImage2}
+			, #{guestRoomImage3}
+			, #{guestRoomImage4}
+		)
+	</insert>
+	<!-- 객실 삭제 -->
+	<delete id="guestRoomDelete" parameterType="String">
+		DELETE
+		FROM guestRoom
+		WHERE guestRoomName = #{guestRoomName}
+	</delete>
+	<!-- 객실 관리 정보 리스트 -->
+ 	<select id="guestRoomAdminInfoList" resultType="kr.iei.hotel.guestroom.vo.GuestRoomVO" parameterType="String">
+ 		SELECT *
+ 		FROM guestRoomInfo
+ 		where guestRoomName = #{guestRoomName}
+ 	</select>
+	<!-- 객실 정보 추가 -->
+ 	<insert id="guestRoomInfoInsert" parameterType="kr.iei.hotel.guestroom.vo.GuestRoomVO">
+		INSERT INTO
+		guestRoomInfo (
+			<include refid="guestRoomInfoColumns"/>
+		) VALUES (
+			  #{guestRoomNo}
+			, #{guestRoomName}
+			, #{guestRoomPrice}
+			, #{guestRoomView}
+			, #{guestRoomArea}
+			, #{guestRoomBedType}
+			, #{standardPersonnel}
+			, #{adultPrice}
+			, #{childPrice}
+			, #{standardNo}
+		)
+	</insert>
+	<!-- 객실 정보 삭제 -->
+	<delete id="guestRoomInfoDelete" parameterType="int">
+		DELETE
+		FROM guestRoomInfo
+		WHERE guestRoomNo = #{guestRoomNo}
+	</delete>
+ </mapper>

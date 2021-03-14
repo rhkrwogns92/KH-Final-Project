@@ -1,0 +1,204 @@
+/*공지사항*/
+
+/*--------------------- 관리자 공지사항 설명 부분 ---------------------*/
+#admin_notice .dl-horizontal{
+    margin-top: 62px;
+}
+#admin_notice dl dt{      
+    font-size: 30px;
+    text-align: left;
+    width: 200px;    
+    color: #567dac;
+}
+
+#admin_notice hr.style-five {
+    margin-top: 25px;
+    border: 0;
+    height: 0;
+    box-shadow: 0 0 6px 1px rgb(90, 117, 190);
+    margin-bottom: 60px;
+}
+#admin_notice hr.style-five:after {  
+    content: "\00a0"; 
+}
+
+/*--------------------- 관리자 공지사항 부분 ---------------------*/
+#admin_notice #detail_Top{
+    margin: 0 100px;    
+}
+#admin_notice #detail_1 #input1{
+    text-align: center;
+    background-color: white;
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+}
+#admin_notice #detail_1 #input2{
+    width: 840px;
+    height: 40px;
+}
+
+#admin_notice #detail_3 #category{
+    text-align: center;
+    background-color: white;
+    width: 90px;
+    height: 40px;
+    font-size: 15px;
+}
+#admin_notice #detail_3 #select{
+    width: 120px;
+}
+
+/*--------------------- 관리자 비밀글 부분 ---------------------*/
+#admin_notice .secret_check {   
+    position: relative;
+    left: 80%;
+    top: -35px;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 35px;
+    font-size: 18px;
+    line-height: 29px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 10px;
+    padding: 3px;
+    
+   
+}
+
+
+/*--------------------- 목록 부분 ---------------------*/
+#admin_notice #adminback {
+    display: flex;
+    width: 240px;    
+    position: relative;
+    top: -40px;
+    left:39.7%;
+    margin-bottom: 20px;
+}
+#admin_notice #adminback input {    
+    height: 45px; 
+    background-color: rgb(245, 245, 245);    
+    font-size: 20px;
+    color: black;    
+    margin: 0 15px;
+}
+
+
+/*FAQ*/
+
+/*--------------------- 목록 부분 ---------------------*/
+#admin_notice #faqinsert_adminback {
+    display: flex;
+    width: 240px;    
+    position: relative;
+    top: -4px;
+    left:37.5%;
+    margin-bottom: 40px;
+}
+#admin_notice #faqinsert_adminback #fBtnBack,#fBtnInsert,#fBtnUpdate,#fBtnDelete {    
+    height: 45px; 
+    background-color: rgb(245, 245, 245);    
+    font-size: 20px;
+    color: black;    
+    margin: 0 15px;
+}
+
+
+/*============= select ===============*/
+#admin_faq_select {
+	display: inline-block;   
+   	position: relative;
+	left: 32%;   
+   	text-align:center;
+   	margin: 40px 0;
+}
+#admin_faq_select>h3{
+   	text-align: center; 
+   	font-size: 30px;  
+   	font-weight: bold;  
+       
+    color: #567dac;  
+}
+#admin_faq_select #fCover{
+	display:flex;
+	justify-content: space-between;
+}
+#admin_faq_select #fCover #div2{
+	display:flex;
+}
+#admin_faq_select #fCover #category{
+	width:110px;
+}
+#admin_faq_select #fCover #btnSearch{
+	width:70px;
+}
+#admin_faq_select #btn_back #faq_insert{
+    width: 100px;
+    height: 30px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(154, 174, 228);
+	margin-top: 20px;
+	margin-bottom: 3px;
+}
+#admin_faq_select #btn_back #faq_insert:hover {
+	background-color: rgb(213, 223, 250);
+	cursor:pointer;
+}
+#admin_faq_select .title{
+  	margin-top:6px;
+   	background-color: rgb(154, 174, 228);
+   	padding: 4px 0;
+   	text-align: center;
+  	width: 800px;
+  	font-size: 17px;  	
+}
+#admin_faq_select span{
+   	display: inline-block;
+   	text-align: center;      
+}
+
+#admin_faq_select .id{
+	margin-right: 30px;
+	width:40px;
+}
+#admin_faq_select .category{
+	margin-right: 40px;	
+	width:100px;
+}
+#admin_faq_select .question{
+	text-align: left;
+	margin-right: 40px;
+	width:500px;
+}
+#admin_faq_select .question1{
+	margin-right: 40px;
+	width:500px;
+}
+#admin_faq_select .items>div{
+   	line-height: 25px;
+}
+
+#admin_faq_select .items>div:hover {
+   	background-color: #bbb;
+   	cursor: pointer;
+}
+
+#admin_faq_select .items>div:last-child {
+   	border-bottom: 2px solid #aaa;
+   	margin-bottom: 10px;
+}
+#admin_faq_select #btn_back{
+	display: flex;
+	justify-content: space-between;
+}
+#admin_faq_select .pagination .btnHide{
+	pointer-events: none; 
+	cursor: default;
+}
+

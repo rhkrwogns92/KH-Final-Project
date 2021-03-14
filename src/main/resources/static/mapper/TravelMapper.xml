@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.iei.hotel.travel.mapper.TravelMapper">
+
+	<!-- 관광지 조회 -->
+	<select id="selectTourList" resultType="kr.iei.hotel.travel.vo.TravelVO">
+		SELECT * 
+		FROM TouristSpot
+	</select>
+	
+	<!-- 관광지 상세 조회 -->
+	<select id="selectTourDetail" resultType="kr.iei.hotel.travel.vo.TravelVO" parameterType="String">
+		SELECT *
+		FROM TouristSpot
+		WHERE tsName = #{name}
+	</select>
+	
+	<!-- 맛집 조회 -->
+	<select id="selectFoodList" resultType="kr.iei.hotel.travel.vo.TravelVO">
+		SELECT *
+		FROM FamousRestaurant
+	</select>
+	
+	<!-- 맛집 상세 조회 -->
+	<select id="selectFoodDetail" resultType="kr.iei.hotel.travel.vo.TravelVO" parameterType="String">
+		SELECT * 
+		FROM FamousRestaurant
+		WHERE frName = #{name}
+	</select>
+</mapper>

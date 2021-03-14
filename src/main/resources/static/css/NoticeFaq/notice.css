@@ -1,0 +1,107 @@
+/*--------------------- 공지사항 설명 부분 ---------------------*/
+#notice{
+	margin: 0 auto;
+}
+#notice .dl-horizontal{
+    margin-top: 60px;
+}
+#notice dl dt{  
+    font-size: 30px;
+    text-align: left;
+    color: #567dac;
+}
+#notice dl dd{
+    display: inline-block;
+    margin-left: -150px;
+    margin-top: 10px;
+}
+#notice dl #admindt{  
+    font-size: 30px;
+    text-align: left;
+    color: #567dac;
+    width: 230px;
+}
+#notice dl #admindd{
+    display: inline-block;
+    margin-left: -220px;
+    margin-top: 10px;
+}
+
+/*--------------------- form태그 부분 ---------------------*/
+#notice #frm_notice{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#notice #frm_notice #span{
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: 10px;    
+}
+#notice #frm_notice #total{
+    color:rgb(78, 71, 141);
+    font-weight: bold;       
+}
+#notice .form-control{
+    display: inline-block;
+    width: 90px;    
+    
+}
+#notice #frm_notice #text{
+    width: 150px;    
+}
+#notice #frm_notice #button{
+    display: inline-block;
+    width: 70px;
+    height: 34px;    
+    margin-bottom: 5px;
+}
+/*--------------------- 공지사항 내용 부분 ---------------------*/
+#notice .table{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#notice .table thead{
+    background-color: rgb(213, 223, 250);
+}
+#notice .table .view{
+	cursor: pointer;
+}
+#notice .table .view #secret{
+	background-color: rgb(245, 242, 241);
+	color: rgb(224, 62, 34);
+	font-weight: bold;
+}
+
+/*--------------------- 글쓰기 부분 ---------------------*/
+#notice #writer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+#notice #writer input{
+    text-align: center;
+}
+/*--------------------- 페이징 부분 ---------------------*/
+#notice #pagination {
+    position:relative;
+    left: 44%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    cursor: pointer;	    
+}
+#notice #user_pagination {
+    position:relative;
+    left: 44%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-top: 55px;
+    cursor: pointer;	    
+}
+#notice .pagination .btnHide{
+	pointer-events: none; 
+	cursor: default;
+}
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.iei.hotel.memberUpdate.mapper.MemberUpdateMapper">
+	
+	
+	<select id="getMemberInfo" resultType='kr.iei.hotel.memberUpdate.dto.MemberUpdateDto' >
+		SELECT * FROM member  WHERE memberEmail=#{memberEmail}
+	</select>
+	
+	<update id="memberUpdate"  >
+		UPDATE member SET 	
+			  memberNick = #{memberNick}
+			 ,memberName = #{memberName}
+			 ,memberPhone = #{memberPhone}
+			 ,memberAgree = #{memberAgree}
+
+			 <if test="memberPassword !=null and !memberPassword.equals('') ">			 	
+			 	,memberPassword=#{memberPassword}			 	
+			 	,memberPwChangeDate=SYSDATE			 	
+			 </if>
+			 			 			 
+	   WHERE memberEmail = #{memberEmail}
+	</update>
+	
+	
+	<delete id="memberDelete">
+		DELETE FROM member WHERE memberEmail = #{memberEmail}
+	</delete>
+	
+</mapper>

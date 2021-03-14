@@ -1,0 +1,89 @@
+@charset "UTF-8";
+        .hotelHugWrap {
+            font-family: 'Noto Sans', sans-serif;
+            padding-top: 50px;
+            font-size: 14px;
+            width: 1280px;
+            padding: 0 80px;
+            margin: 0 auto;
+            padding-bottom: 200px;
+        }
+        .hotelHugWrap > .buttonTitle {
+            padding: 110px 0 110px;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 40px;
+            color: #193f6e;
+            text-align: center;
+
+        }
+        .hotelHugWrap .buttonTitle p{
+            padding-top: 20px;
+        }
+        .hotelHugWrap .reservationInfo a {
+		   padding: 51px;
+		   margin: -51px;
+		   text-decoration: none;
+		   color: #193f6e;
+        }
+        .hotelHugWrap .reservationInfo a:hover {
+			color: white;
+
+        }
+        .hotelHugWrap .reservationInfo .guestRoomButton {
+            background: white;
+    		width: 78px;		
+        }
+        .hotelHugWrap .reservationInfo .guestRoomButton:hover {
+            color: white;
+            background: #193f6e;
+        }
+
+        .hotelHugWrap .reservationInfo th {
+            border: 1px solid #193f6e;
+            padding: 22px;
+            background: #bedae8;
+            color: #193f6e;
+
+        }
+        .hotelHugWrap .reservationInfo td{
+            border: 1px solid #193f6e;
+            padding: 10px;
+            background: white;
+            color: #193f6e;
+        }
+        .hotelHugWrap .reservationInfo .lengthSort {
+            width: 129px;
+            text-align: center;
+        }
+        .hotelHugWrap .searchArea {
+            margin-bottom: -78px;
+        }
+		.reservationWrap {
+
+		}
+		.reservationInfo{
+
+
+		}
+		.hotelHugWrap > a {
+            border: 1px solid #193f6e;
+            background-color: white;
+            color: #193f6e;
+            padding: 30px;
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        .hotelHugWrap > a:hover {
+            background: #193f6e;
+            color: white;
+        }
+        .hotelHugWrap > h3 {
+            text-align: center;
+            margin-top: 110px;
+                margin-bottom: 110px;
+        }
+
+

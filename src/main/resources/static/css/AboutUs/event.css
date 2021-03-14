@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.event-section {
+    width: 1245px;
+	margin: 0 auto;
+	padding: 4% 0;
+    /* margin: 4% 9%; */
+}
+
+
+/* intro-title start */
+
+.event-title {
+    width: 100%;
+}
+
+.event-title .name {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+
+.event-title p {
+    font-size: 20px;
+    text-align: left;
+    margin: 15px 0 0 20px;
+}
+
+.event-list .list {
+    vertical-align: middle;
+    margin: 6.5% 0 0 2.5%;
+}
+
+.event-list .list li {
+    position: relative;
+    vertical-align: middle;
+    margin-bottom: 2%;
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+.event-list .list li .box {
+    padding: 0;
+    position: relative;
+}
+
+.box .photo {
+    float: left;
+    width: 500px;
+    margin: 0 3% 0 0;
+    position: relative;
+}
+
+.box .photo img {
+    vertical-align: middle;
+    width: 500px;
+    height: 300px;
+}
+
+.box .detail {
+    height: 300px;
+    margin: 0 0 50px 9%;
+    padding-left: 45%;
+}
+
+.box .detail h3 {
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.box .detail p {
+    font-size: 18px;
+    line-height: 30px;
+}

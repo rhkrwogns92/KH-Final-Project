@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="kr.iei.hotel.faq.mapper.FaqMapper">
+
+	<!-- ─────────────────────────────────── select ─────────────────────────────────── -->
+	<!-- ──────────────────────── Total Menu ──────────────────────── -->
+	<select id="tot_list_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from faq
+		where question like '%${findStr}%'
+		or    answer   like '%${findStr}%'
+	</select>	
+	<select id="select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+        	select rownum no, f.* from (
+				select * from faq 
+            	where question like '%${findStr}%' 
+            	or	  answer   like '%${findStr}%'			 
+				order by id desc) f
+		) where no between #{startNo} and #{endNo} 
+		order by id desc
+	</select>
+	
+	<select id="total_question_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from faq
+		where question like '%${findStr}%'
+		
+	</select>	
+	<select id="total_question_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+        	select rownum no, f.* from (
+				select * from faq 
+            	where question like '%${findStr}%'            				 
+				order by id desc) f
+		) where no between #{startNo} and #{endNo} 
+		order by id desc
+	</select>
+	
+	<select id="total_answer_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from faq
+		where answer   like '%${findStr}%'
+	</select>	
+	<select id="total_answer_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+        	select rownum no, f.* from (
+				select * from faq 
+            	where answer   like '%${findStr}%'			 
+				order by id desc) f
+		) where no between #{startNo} and #{endNo} 
+		order by id desc
+	</select>
+	
+	
+	<!-- ──────────────────────── Guide Menu ──────────────────────── -->
+	<select id="tot_guide_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%'
+			or    answer   like '%${findStr}%')
+		where category = '[이용안내]'
+	</select>
+	<select id="faqGuide" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'
+					or    answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[이용안내]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<select id="guide_question_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%')
+		where category = '[이용안내]'		
+	</select>	
+	<select id="guide_question_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[이용안내]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<select id="guide_answer_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where answer   like '%${findStr}%')
+		where category = '[이용안내]'
+	</select>	
+	<select id="guide_answer_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[이용안내]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+		
+	
+	<!-- ──────────────────────── Room Menu ──────────────────────── -->
+	<select id="tot_room_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%'
+			or    answer   like '%${findStr}%')
+		where category = '[객실]'
+	</select>
+	<select id="faqRoom" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'
+					or    answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[객실]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<select id="room_question_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%')
+		where category = '[객실]'
+	</select>	
+	<select id="room_question_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'					
+			        order by id desc) f
+			where f.category = '[객실]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<select id="room_answer_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where answer   like '%${findStr}%')
+		where category = '[객실]'
+	</select>	
+	<select id="room_answer_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[객실]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	
+	<!-- ──────────────────────── Dining Menu ──────────────────────── -->
+	<select id="tot_dining_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%'
+			or    answer   like '%${findStr}%')
+		where category = '[다이닝]'
+	</select>
+	<select id="faqDining" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'
+					or    answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[다이닝]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<select id="dining_question_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%')
+		where category = '[다이닝]'
+	</select>	
+	<select id="dining_question_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[다이닝]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<select id="dining_answer_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where answer   like '%${findStr}%')
+		where category = '[다이닝]'
+	</select>	
+	<select id="dining_answer_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[다이닝]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	
+	<!-- ──────────────────────── Facility Menu ──────────────────────── -->
+	<select id="tot_facility_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%'
+			or    answer   like '%${findStr}%')
+		where category = '[부대시설]'
+	</select>
+	<select id="faqFacility" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'
+					or    answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[부대시설]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<select id="facility_question_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%')
+		where category = '[부대시설]'
+	</select>	
+	<select id="facility_question_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[부대시설]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<select id="facility_answer_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where answer   like '%${findStr}%')
+		where category = '[부대시설]'
+	</select>	
+	<select id="facility_answer_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[부대시설]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	
+	<!-- ──────────────────────── Payment Menu ──────────────────────── -->
+	<select id="tot_payment_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%'
+			or    answer   like '%${findStr}%')
+		where category = '[결제]'
+	</select>
+	<select id="faqPayment" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'
+					or    answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[결제]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<select id="payment_question_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%')
+		where category = '[결제]'
+	</select>	
+	<select id="payment_question_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[결제]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<select id="payment_answer_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where answer   like '%${findStr}%')
+		where category = '[결제]'
+	</select>	
+	<select id="payment_answer_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[결제]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	
+	<!-- ──────────────────────── Etc Menu ──────────────────────── -->
+	<select id="tot_etc_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%'
+			or    answer   like '%${findStr}%')
+		where category = '[기타]'		
+	</select>
+	<select id="faqEtc" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'
+					or    answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[기타]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+
+	<select id="etc_question_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where question like '%${findStr}%')
+		where category = '[기타]'
+	</select>	
+	<select id="etc_question_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where question like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[기타]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<select id="etc_answer_size" resultType='int' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select count(id) from (
+		    select * from faq
+			where answer   like '%${findStr}%')
+		where category = '[기타]'
+	</select>	
+	<select id="etc_answer_select" resultType='kr.iei.hotel.faq.vo.FaqVo' parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+			select rownum no, f.* from (
+			        select * from faq
+					where answer   like '%${findStr}%'
+			        order by id desc) f
+			where f.category = '[기타]'
+			) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+	
+	<!-- ─────────────────────────────────── 관리자 ─────────────────────────────────── -->
+	
+	<!-- ──────────────────────────── select ──────────────────────────── -->
+	<select id="view" resultType="kr.iei.hotel.faq.vo.FaqVo" parameterType="int">
+		select * from faq where id = #{id}
+	</select>
+	
+	<select id="admin_tot_list" resultType="int" parameterType="String">
+		select count(id) from faq where category like '%${menu}%'		
+	</select>
+	
+	<select id="admin_search" resultType="kr.iei.hotel.faq.vo.FaqVo" parameterType='kr.iei.hotel.notice.vo.Page'>
+		select * from (
+		    select rownum no, f.* from (
+		        select * from faq
+		        where category like '%${menu}%'
+		        order by id desc) f
+		) where no between #{startNo} and #{endNo}
+		order by id desc
+	</select>
+
+	<!-- ──────────────────────────── insert ──────────────────────────── -->
+	<insert id='faqInsert' parameterType='kr.iei.hotel.faq.vo.FaqVo'>
+		insert into faq (id, category, question, answer)
+		values(seq_faq_id.nextval, #{category}, #{question}, #{answer})
+	</insert>
+	
+	<!-- ──────────────────────────── update ──────────────────────────── -->
+	<update id='faqUpdate' parameterType='kr.iei.hotel.faq.vo.FaqVo'>
+		update faq set category=#{category}, question=#{question}, answer=#{answer} where id=#{id}
+	</update>	
+	
+	<!-- ──────────────────────────── delete ──────────────────────────── -->
+	<delete id='faqDelete' parameterType='int'>
+		delete from faq where id=#{id}
+	</delete>
+
+</mapper>

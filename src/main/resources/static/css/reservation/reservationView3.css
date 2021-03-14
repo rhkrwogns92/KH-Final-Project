@@ -1,0 +1,40 @@
+@charset "UTF-8";
+        .hotelHugWrap {
+            font-family: 'Noto Sans', sans-serif;
+            padding-top: 50px;
+            font-size: 14px;
+            width: 1280px;
+            padding: 0 80px;
+            margin: 0 auto;
+        }
+        .hotelHugWrap > .buttonTitle {
+            padding: 110px 0 110px;
+            font-weight: 100;
+            font-size: 30px;
+            line-height: 40px;
+            color: #193f6e;
+            text-align: center;
+        }
+        .hotelHugWrap > .buttonTitle p{
+            padding-top: 20px;
+        }
+        .hotelHugWrap > .buttonTitle > .buttonType {
+            border: 1px solid #193f6e;
+            font-size: 13px;
+            font-weight: bold;
+            border-radius: 50%;
+            padding: 12px 17px;
+            margin: -3px;
+            margin-left: -10px;
+        }
+        .hotelHugWrap > .buttonTitle > .buttonType.on {
+            background: #193f6e;
+            color: white;
+        }
+        .hotelHugWrap > .successBox {
+            margin-bottom: 400px;
+        }
+        .hotelHugWrap > .successBox > h2 {
+            text-align: center;
+            color: #193f6e;;
+        }

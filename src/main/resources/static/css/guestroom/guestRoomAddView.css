@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.hotelHugWrap {
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 50px;
+    font-size: 14px;
+    width: 1280px;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+.hotelHugWrap > .buttonTitle {
+    padding: 110px 0 110px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #193f6e;
+    text-align: center;
+
+}
+.hotelHugWrap > .buttonTitle p{
+    padding-top: 20px;
+}
+.hotelHugWrap input {
+	border: 1px solid #193f6e;
+	text-align: center;
+	width: 76.2%;
+    padding: 10px 264px;
+	
+}
+.hotelHugWrap textarea {
+	border: 1px solid #193f6e;
+	text-align: center;
+}
+.hotelHugWrap label {
+	display: block;
+
+	    margin-left: 242px;
+    font-size: 20px;
+}
+.hotelHugWrap form {
+    margin-left: 218px;
+}
+.hotelHugWrap .guestRoomAddButton {
+    margin-top: 30px;
+    margin-bottom: 110px;
+    background: white;
+    font-size: 23px;
+    font-weight: 500;
+}
+.hotelHugWrap .guestRoomAddButton:hover {
+	background: #193f6e;
+	color: white;
+}
+.hotelHugWrap .whatTheFuck {
+	border: 0;
+}
+

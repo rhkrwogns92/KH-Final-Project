@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.foodView-section {
+    width: 1245px;
+	margin: 0 auto;
+	padding: 4% 0;
+    /* margin: 4% 9%; */
+}
+
+
+/* foodView-title start */
+
+.foodView-title {
+    width: 100%;
+}
+
+.foodView-title .name {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.foodView-title p {
+    font-size: 20px;
+    text-align: left;
+    margin: 15px 0 80px 20px;
+}
+
+.foodwrap {
+	width: 1245px;
+}
+
+.food1 {
+	width: 392px;
+	margin: 0 10px 100px 10px;
+	display: inline-block;
+	
+}
+.food1 a {
+	text-decoration: none;
+}
+.food1 img{
+	width: 385px;
+	height: 250px;
+}
+
+.food-info {
+	width: 385px;
+	height: 120px;
+	background: #bedae8;
+}
+
+.food1 h3 {
+	margin: 0 0 10px 0;
+	padding-top: 15px;
+	text-align: center;
+	color: #193f6e;
+	font-weight: bold;
+}
+.food1 h5 {
+	margin: 0 0 10px 0;
+	text-align: center;
+	color: black;
+}

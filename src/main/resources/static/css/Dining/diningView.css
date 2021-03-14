@@ -1,0 +1,100 @@
+
+.dining-section {
+    width: 1245px;
+	margin: 0 auto;
+	padding: 4% 0;
+    /* margin: 4% 9%; */
+}
+
+
+/* directions-title start */
+
+.dining-title {
+    width: 100%;
+}
+
+.dining-title .name {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+
+.dining-title p {
+    font-size: 20px;
+    text-align: left;
+    margin: 15px 0 80PX 20px;
+}
+
+
+.innerBox>.diningWrap {
+    border: 0.5px solid #193f6e;
+    height: 465px;
+    margin-bottom: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.innerBox>.diningWrap>.imageBox {
+    position: absolute;
+    /* width: 767px;
+            height: 463px; */
+}
+
+.innerBox>.diningWrap>.imageBox>img {
+    width: 850px;
+    height: 463px;
+}
+
+.innerBox>.diningWrap>.diningContent {
+    height: 465px;
+    padding: 55px 40px 40px;
+    margin-left: 850px;
+}
+
+.innerBox>.diningWrap>.diningContent>.diningTitle {
+    color: #193f6e;
+    line-height: 2;
+}
+
+.innerBox>.diningWrap>.diningContent>.diningTitle>span {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.innerBox>.diningWrap>.diningContent>.diningInfo {
+    margin-top: 0;
+    padding: 15px 0;
+}
+
+.innerBox>.diningWrap>.diningContent>.diningInfo>p {
+    position: relative;
+    padding-left: 65px;
+    line-height: 22px;
+    color: #999;
+}
+
+.innerBox>.diningWrap>.diningContent>.diningInfo>p>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-weight: bold;
+    color: #666;
+}
+
+.innerBox>.diningWrap>.diningContent>.diningInfo>.buttonTypeSmall {
+    border: 1px solid #193f6e;
+    padding: 15px 24px;
+    color: #193f6e;
+    position: absolute;
+    bottom: 40px;
+}
+
+.innerBox>.diningWrap>.diningContent>.diningInfo>a:hover {
+    text-decoration: none;
+    background-color: #193f6e;
+    color: white;
+}

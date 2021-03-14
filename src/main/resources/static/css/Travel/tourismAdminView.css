@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+.hotelHugWrap {
+	font-family: 'Noto Sans', sans-serif;
+	padding-top: 50px;
+	font-size: 14px;
+	width: 1280px;
+	padding: 0 80px;
+	margin: 0 auto;
+}
+
+.hotelHugWrap>.buttonTitle {
+	padding: 110px 0 110px;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 40px;
+	color: #193f6e;
+	text-align: center;
+}
+
+.hotelHugWrap>.buttonTitle p {
+	padding-top: 20px;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap {
+	padding-top: 30px;
+	border-top: 1px solid #193f6e;
+	height: 187px;
+	margin-bottom: 61px;
+	position: relative;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.imageBox {
+	float: left;
+
+	/* width: 767px;
+            height: 463px; */
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.imageBox>img {
+	width: 300px;
+	height: 185px;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent {
+	position: absolute;
+	left: 320px;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomTitle {
+	color: #193f6e;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomTitle>span {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 30px;
+	font-weight: 100;
+	line-height: 1;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomInfo {
+	margin-top: 20px;
+
+	/* border-top: 1px solid #193f6e; */
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomInfo>p {
+	position: relative;
+	margin-top: 7px;
+	padding-left: 65px;
+	line-height: 29px;
+	color: #999;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomInfo>p>span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	font-weight: bold;
+	color: #666;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomPrice {
+	position: absolute;
+	right: 0;
+	padding-top: 30px;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomPrice>span {
+	margin-right: 100px;
+	font-size: 30px;
+	color: #193f6e;;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomPrice>p {
+	margin-bottom: 0;
+	color: #666;
+	font-weight: 300;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomPrice>a {
+	border: 1px solid #193f6e;
+	background-color: white;
+	color: #193f6e;
+	padding: 30px;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomPrice>a:hover {
+	background: #193f6e;
+	color: white;
+}
+
+.hotelHugWrap>a {
+	border: 1px solid #193f6e;
+	background-color: white;
+	color: #193f6e;
+	padding: 30px;
+	display: block;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.hotelHugWrap>a:hover {
+	background: #193f6e;
+	color: white;
+}
+
+.hotelHugWrap>h3 {
+	text-align: center;
+	margin-top: 110px;
+}

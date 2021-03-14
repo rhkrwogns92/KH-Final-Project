@@ -1,0 +1,133 @@
+
+/* footer start*/
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #bedae8;
+}
+
+.footer-content {
+    width: 1200px;
+    height: 205px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    margin: 25px 10px 20px 4%;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.logo h2 {
+    font-size: 32px;
+    margin: 0 0 8px 0;
+}
+
+.logo h5 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+}
+
+.footer-info {
+    width: 74%;
+    height: 90%;
+    float: left;
+    margin: 25px 0 0 12%;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.footer-info ul {
+    list-style-type: none;
+}
+
+.footer-info ul li {
+    float: left;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.footer-info ul li a {
+    color: #3b6ba5;
+}
+
+address {
+    width: 50%;
+    float: left;
+    margin: 15px 0;
+    font-style: normal;
+    line-height: inherit;
+    text-align: left;
+}
+
+.family-member {
+    text-align: right;
+}
+
+.hughotel-member {
+    width: 200px;
+    height: 35px;
+    padding: 0 15px;
+    background-color: transparent;
+    font-size: 13px;
+    background-color: #193f6e;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.hughotel-member option {
+    background-color: #3b6ba5;
+    color: white;
+}
+
+@media(max-width:1440px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media(max-width:1250px) {
+    .logo,
+    .family-member {
+        display: none;
+    }
+    .footer-content {
+        width: 100%;
+    }
+    .footer-info {
+        width: 90%;
+        height: 85%;
+        float: left;
+        margin: 25px 0 0 5%;
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .footer-info ul {
+        list-style-type: none;
+    }
+    .footer-info ul li {
+        float: left;
+        margin-right: 15px;
+        font-weight: bold;
+    }
+    .footer-info ul li a {
+        color: #3b6ba5;
+    }
+    address {
+        width: 100%;
+        float: right;
+        margin: 15px 0;
+        font-style: normal;
+        line-height: inherit;
+        text-align: right;
+    }
+}
+

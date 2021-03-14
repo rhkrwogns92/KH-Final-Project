@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@font-face{
+	  font-family:'NanumBarunGothic';
+	  src:url("../fonts/NanumBarunGothic.eot");
+	  src:local("☺"),url("../fonts/NanumBarunGothic.woff") format("woff");
+}		
+section {font-family: "맑은 고딕","Malgun Gothic",  sans-serif; }		
+
+
+.modal-th{
+	background: #d5dffa;
+	width: 30%;
+	text-align: left;
+	
+}

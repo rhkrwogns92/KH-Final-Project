@@ -1,0 +1,327 @@
+.header,.footer {
+	font-family: 'Playfair Display', serif;
+}
+.directions-section {
+    width: 1245px;
+	margin: 0 auto;
+	padding: 4% 0;
+    /* margin: 4% 9%; */
+}
+
+
+/* directions-title start */
+
+.directions-title {
+    width: 100%;
+}
+
+.directions-title .name {
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+
+.directions-title p {
+    font-size: 20px;
+    text-align: left;
+    margin: 15px 0 0 20px;
+}
+
+
+/* 지도 */
+
+#map {
+	margin: 0 auto;
+    margin-top: 70px;
+    width: 92%; 
+    height: 500px;
+    
+}
+/* .wrap {position: absolute;left: 0;bottom: 40px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
+ */ /* .wrap * {padding: 0;margin: 0;} */
+.wrap .info {
+	width: 286px;
+	height: 120px;
+	border-radius: 5px;
+	border-bottom: 2px solid #ccc;
+	border-right: 1px solid #ccc;
+	overflow: hidden;
+	background: #fff;
+}
+
+.wrap .info:nth-child(1) {
+	border: 0;
+	box-shadow: 0px 1px 2px #888;
+}
+
+.info .title {
+	padding: 5px 0 0 10px;
+	height: 30px;
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.info .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #888;
+	width: 17px;
+	height: 17px;
+	background:
+		url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');
+}
+
+.info .close:hover {
+	cursor: pointer;
+}
+
+.info .body {
+	position: relative;
+	overflow: hidden;
+}
+
+.info .desc {
+	position: relative;
+	margin: 13px 0 0 90px;
+	height: 75px;
+}
+
+.desc .ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.desc .jibun {
+	font-size: 11px;
+	color: #888;
+	margin-top: -2px;
+}
+
+.info .img {
+	position: absolute;
+	top: 6px;
+	left: 5px;
+	width: 73px;
+	height: 71px;
+	border: 1px solid #ddd;
+	color: #888;
+	overflow: hidden;
+}
+
+.info:after {
+	content: '';
+	position: absolute;
+	margin-left: -12px;
+	left: 50%;
+	bottom: 0;
+	width: 22px;
+	height: 12px;
+	background:
+		url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')
+}
+
+.info .link {
+	color: #5085BB;
+}
+
+.map-info {
+    width: 92%;
+    height: 50px;
+    margin: 0 4% 5% 4%;
+    background-color: rgb(190, 218, 232);
+}
+
+.map-info h4 {
+    float: left;
+    padding: 5px 0 5px 15px;
+    text-align: left;
+}
+
+.map-info h5 {
+    float: right;
+    font-size: 15px;
+    padding: 6px 15px 6px 0;
+    position: relative;
+    text-align: right;
+}
+
+
+/* 오시는길 방법 */
+.container {
+	width: 95%; 
+}
+
+.panel-group .panel .panel-heading {
+    background-color: rgb(190, 218, 232);
+}
+
+.panel-group .panel .panel-heading .panel-title a {
+    font-weight: bolder;
+}
+.panel-body {
+	font-size: 15px;
+}
+.detailInfo {
+    height: 80px;
+}
+
+.detailInfo ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.detailInfo ul li {
+    width: 33%;
+    float: left;
+    margin: 10px 0 10px 0;
+}
+
+.detailInfo ul li dl {
+    padding-top: 0;
+    padding-left: 30px;
+}
+
+.detailInfo ul li dl dt {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.detailInfo ul li dl dd {
+    font-size: 15px;
+}
+
+.busInfo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.bustimeInfo-detail {
+    border-top: 1px solid black;
+    text-align: center;
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 10px;
+}
+
+.bustimeInfo-detail th,
+.bustimeInfo-detail td {
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 20px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-weight: 400;
+    line-height: 1.8;
+}
+.txt_required {
+    /* font-size: 25px; */
+    color: red;
+}
+/* 층별안내 */
+
+.floor-info {
+	margin: 0 auto;
+    width: 1152px;
+    height: 976px;
+    
+    
+}
+
+.floor-info h1 {
+    margin: 50px 0;
+    font-size: 33px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+/* 엘레베이터 */
+
+.tower {
+    display: inline-block;
+    background-color: grey;
+    left: 365px;
+    position: relative;
+    margin-left: 50px;
+}
+
+.floor {
+    width: 300px;
+    height: 100px;
+    color: white;
+    background-color: #193f6e;
+    margin: 10px 10px 10px 10px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.elevator {
+    width: 300px;
+    height: 100px;
+    margin: -10px 10px 10px 10px;
+    background-color: #72a5d3;
+    position: absolute;
+    padding-left: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: default;
+    left: 0
+}
+
+.floor-detail-info {
+    width: 400px;
+    height: 890px;
+    margin: 0 0 10px 30px;
+    /* background-color: #72a5d3; */
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: default;
+    float:right;
+}
+#info-f9, #info-f7, #info-f6, #info-f4, #info-f2, #info-f1, #info-b1, #info-b2 {
+	width: 400px;
+    height: 40px;
+    margin: 40px 0 30px 0;
+    /* background-color: beige; */
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: default;
+    float:right;
+    color: white;
+    transition-duration: 1s;
+}
+.b2 {
+	margin: 700px 0 30px 0;
+}
+.brown {
+    color: black;
+    background-color: yellow;
+}
+
+.clickbrown {
+    color: black;
+    background-color: yellow;
+}
+
+.yellowgreen {
+    background-color: #bedae8;
+}
+
+.people {
+    position: absolute;
+    margin: -10px 10px 10px 10px;
+    width: 70px;
+    height: 100px;
+}

@@ -1,0 +1,6 @@
+/* 작업전에 공통적용되는 부분 */
+
+@import "Component/reset.css";
+@import "Component/header.css";
+@import "Component/footer.css";
+

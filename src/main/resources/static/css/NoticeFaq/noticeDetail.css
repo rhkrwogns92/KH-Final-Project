@@ -1,0 +1,254 @@
+/*--------------------- 공통 부분 ---------------------*/
+#notice_detail{            
+    margin-top: 20px;
+    margin-bottom: 20px;  
+    width: 1200px;
+    margin: 0 auto;
+}
+#notice_detail table {   
+    border-collapse: collapse; 
+     
+}
+
+/*--------------------- 공지사항 설명 부분 ---------------------*/
+#notice_detail .dl-horizontal{
+    margin-top: 60px;
+}
+#notice_detail dl dt{      
+    font-size: 30px;
+    text-align: left;
+    color: #567dac;
+    width: 230px;
+}
+#notice_detail dl dd{
+    display: inline-block;
+    margin-left: -220px;
+    margin-top: 10px;
+    margin-bottom: 85px;
+}
+
+
+/*--------------------- 공지사항 부분 ---------------------*/
+#detail_Top #detail_1 th{    
+    text-align: center;
+    background-color: rgb(213, 223, 250);
+    border-top: 1px solid black;     
+}
+#detail_Top #detail_1 th:nth-of-type(1){
+    text-align: left;
+    text-indent: 50px;
+}
+#detail_Top #detail_1 th:nth-of-type(2){
+    text-align: left;
+    text-indent: 10px;
+}
+
+#detail_Top #detail_2 td{
+    padding: 50px 120px;
+    
+}
+
+/*--------------------- 댓글 작성 부분 ---------------------*/
+#notice_detail #div_1{
+    border:  1px solid rgb(248, 248, 248);
+    min-height: 200px;            
+    height: auto;
+    background-color: rgb(248, 248, 248); 
+    margin-bottom: 30px;   
+}
+#notice_detail #div_2{            
+    margin: 30px 30px;                        
+    width: 1075px;
+    height: auto;
+    background-color: rgb(232, 237, 246);
+}
+#notice_detail #div_3{          
+    display: inline-block;     
+    margin: 20px;    
+                 
+}
+#notice_detail #detail_Middle1{
+    margin-bottom: 10px;    
+}
+#notice_detail #detail_Middle1 td{
+    padding-right: 10px;
+}
+#notice_detail #detail_Middle1 #input1{
+    width:68px; 
+    text-align: center; 
+    height: 30px; 
+    font-size: 14px; 
+    background-color: rgb(240, 240, 240); 
+}
+#notice_detail #detail_Middle1 #input2{    
+    text-align: left;
+    text-indent: 4px;
+    width:140px;
+    height: 30px;
+    background-color: white;
+}
+#notice_detail #detail_Middle1 #input3{
+    width:60px; 
+    text-align: center; 
+    height: 30px; 
+    font-size: 14px;
+    background-color: rgb(240, 240, 240);    
+}
+#notice_detail #detail_Middle1 #input4{
+    text-indent: 4px;
+    width:130px;
+    height: 30px; 
+}
+#notice_detail #detail_Middle1 #input5{
+    width:70px; 
+    text-align: center; 
+    height: 30px; 
+    font-size: 14px;
+    background-color: rgb(240, 240, 240); 
+}
+#notice_detail #detail_Middle1 #input6{
+    width:190px;     
+    text-align: center; 
+    height: 30px; 
+    font-size: 14px;
+    background-color: rgb(240, 240, 240); 
+}
+#notice_detail #detail_Middle2 #div1{    
+    display: inline-block;    
+    text-align: center;        
+}
+#notice_detail #detail_Middle2 #input7{    
+    border: 0;
+    background-color: white;
+    width: 100px; 
+    height: 98px;
+    font-size: 23px;   
+         
+}
+#notice_detail #detail_Middle2 #input8{
+    margin-left:40px; 
+    width:120px;
+    height: 30px; 
+    border:0; 
+    background-color: rgb(232, 237, 246);
+    font-weight: bold;
+}
+#notice_detail #detail_Middle2 #input9{ 
+    margin-left:40px; 
+    width:200px; 
+    height: 30px; 
+    font-size: 14px; 
+    border:0; 
+    background-color: rgb(232, 237, 246);
+    color:rgb(133, 130, 130);
+}
+#notice_detail #detail_Middle2 #btnupdel{
+    display: flex;
+    position: relative;
+    left: -20px;  
+}
+#notice_detail #detail_Middle2 #btnupdel #span2{
+    padding-right: 3px;    
+}
+#notice_detail #detail_Middle2 #btnupdel input,button{
+    background-color: rgb(238, 236, 236);
+    border: 1px solid rgb(175, 158, 158);
+    border-radius: 10px;
+    width:45px;
+    height:28px;   
+}
+
+
+
+#notice_detail #detail_Middle2 hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*--------------------- 페이징 부분 ---------------------*/
+#notice_detail #pcover{	
+	width: 300px;
+	margin-left:420px;
+	text-align: center;
+}
+
+#notice_detail #user_pagination {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    cursor: pointer;	    
+}
+#notice_detail .pagination .btnHide{
+	pointer-events: none; 
+	cursor: default;
+}
+/*--------------------- 목록 부분 ---------------------*/
+#notice_detail #back{
+    position: relative;
+    left:46.7%;
+}
+#notice_detail #back #btnBack{
+    width: 80px;
+    height: 45px;    
+    background-color: rgb(245, 245, 245);
+    font-size: 20px;
+    color: black;    
+    margin-top: 50px;
+    margin-bottom: 50px;    
+}
+
+/*---------- 관리자 뷰 ----------*/
+#notice_detail #adminBack {
+    display: flex;
+    width: 240px;    
+    position: relative;
+    left:37.5%;
+}
+#notice_detail #adminBack input {    
+    height: 45px; 
+    background-color: rgb(245, 245, 245);    
+    font-size: 20px;
+    color: black;    
+    margin: 0 15px;
+    margin-top: 20px;    
+}
+
+/*--------------------- 이전글 다음글 부분 ---------------------*/
+#detail_Footer{
+    margin-top: 50px;
+    margin-bottom: 80px;    
+}
+#detail_Footer *{
+   text-align: center;
+}
+
+#detail_Footer .footer_td{
+	text-align: left;    
+    padding-left: 20px;    
+}
+#detail_Footer th{
+    background-color: rgb(213, 223, 250);
+}
+#detail_Footer .sContent{        
+    background-color: white;   
+    cursor: pointer;   
+}
+#detail_Footer .cursor{
+	cursor: pointer;
+}
+#detail_Footer #detail_Footer .btnHide{
+	pointer-events: none; 
+	cursor: default;
+}
+#detail_Footer #detail_Footer .rowEnd{
+	pointer-events: none; 
+	cursor: default;
+}
+	
+
+
+	
+	
+	
+	

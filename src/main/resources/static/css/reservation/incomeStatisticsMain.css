@@ -1,0 +1,403 @@
+@charset "UTF-8";
+        .hotelHugWrap {
+            font-family: 'Noto Sans', sans-serif;
+            padding-top: 50px;
+            font-size: 14px;
+            width: 1280px;
+            padding: 0 80px;
+            margin: 0 auto;
+        }
+        .hotelHugWrap > .buttonTitle {
+            padding: 110px 0 0px;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 40px;
+            color: #193f6e;
+            text-align: center;
+
+        }
+        .hotelHugWrap .buttonTitle p{
+            padding-top: 20px;
+        }
+		.test {
+			background: #193f6e;
+			transition-duration: 10s;
+			width: 0px;
+			color: white;
+		}
+		.incomeGraph {
+			position: relative;
+    		width: 100%;
+			
+			margin-bottom: 180px;
+			
+    padding-left: 60px;
+    padding-right: 130px;
+			
+			
+		}
+		.wrapLeft {
+
+			border-top: 1px solid #193f6e;
+    border-left: 1px solid #193f6e;
+    border-bottom: 1px solid #193f6e;
+    	
+			    padding-right: 9px;
+		    margin-top: 69px;
+		    position:absolute;
+		}
+		.wrapRight {
+			position: relative;
+			left: 40px;
+			
+			margin-top: 0px;
+		}
+		
+		
+		.boxWrap input {
+    		width: 20px;
+    		margin-left: 64px;
+    		
+		}
+		.boxWrap span {
+		    transition-duration: 1s;
+		}
+		.boxWrap .standardBox {
+			color: red;
+		}
+		.boxWrap .standardBox:hover {
+			background: red;
+			color: white;
+
+			cursor: pointer;
+		}
+		.boxWrap .superiorBox {
+			color: orange;
+		}
+		.boxWrap .superiorBox:hover {
+			background: orange;
+			color: white;
+
+			cursor: pointer;
+		}
+		.boxWrap .deluxeBox {
+			color: goldenrod;
+		}
+		.boxWrap .deluxeBox:hover {
+			background: goldenrod;
+			color: white;
+
+			cursor: pointer;
+		}
+		.boxWrap .royalBox {
+			color: green;
+		}
+		.boxWrap .royalBox:hover {
+			background: green;
+			color: white;
+
+			cursor: pointer;
+		}
+		.boxWrap .totalBox {
+			color: blue;
+		}
+		.boxWrap .totalBox:hover {
+			background: blue;
+			color: white;
+
+			cursor: pointer;
+		}
+		.boxWrap .deleteBox {
+			color: black;
+		}
+		.boxWrap .deleteBox:hover {
+			background: black;
+			color: white;
+
+			cursor: pointer;
+		}
+		
+		
+
+		.wrapLeft p {
+		    margin: 0;
+    		font-size: 14px;
+    		padding-left: 60px;
+		}
+
+
+		.searchBox1 {
+		    text-align: end;
+    		font-size: 20px;
+    		margin-bottom: -3px;
+    	    margin-top: 15px;
+		}
+		.searchBox2 {
+		    margin-bottom: 40px;
+		    text-align: end;
+		    font-size: 20px;
+    		margin-right: 39px;
+		}
+		.searchBox3 {
+		    margin-bottom: 18px;
+		    display: inline;
+		}
+		
+		.searchBox1 > select {
+			color: white;
+			background: #193f6e;
+			    margin-right: 0px;
+		}
+		.searchBox1 > span {
+			color: #193f6e;
+			transition-duration: 1s;
+			margin-left: -8px;
+		}
+		.searchBox1 > span:hover {
+			background: #193f6e;
+			color: white;
+
+		    cursor: pointer;	
+		}
+		
+		.searchBox2 > select {
+			color: white;
+			background: #193f6e;
+			
+    margin-right: 1px;
+			
+		}
+		.searchBox2 > span {
+			color: #193f6e;
+			transition-duration: 1s;
+			margin-left: -8px;
+		}
+		.searchBox2 > span:hover {
+			background: #193f6e;
+			color: white;
+
+		    cursor: pointer;			
+		}
+		
+		.searchBox3 > select {
+			color: white;
+			background: #193f6e;
+		}
+		.searchBox3 > span {
+			color: #193f6e;
+			transition-duration: 1s;
+			margin-left: -5px;
+		}
+		.searchBox3 > span:hover {
+			background: #193f6e;
+			color: white;
+
+		    cursor: pointer;	
+		}
+
+		.boxWrap {
+		    margin-bottom: 10px;
+		
+		}
+		
+		
+		.standardPrice, .standardCount {
+			background: red;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		
+		.standardPriceAVG, .standardCountAVG {
+			background: white;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		.standardPriceAVG2, .standardCountAVG2 {
+			background: white;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+
+		
+		.superiorPrice, .superiorCount {
+			background: orange;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		
+		.superiorPriceAVG, .superiorCountAVG {
+			background: white;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		.superiorPriceAVG2, .superiorCountAVG2 {
+			background: white;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		
+		.deluxePrice, .deluxeCount {
+			background: goldenrod;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		
+		.deluxePriceAVG, .deluxeCountAVG {
+			background: white;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		.deluxePriceAVG2, .deluxeCountAVG2 {
+			background: white;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		
+		.royalPrice, .royalCount {
+			background: green;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		
+		.royalPriceAVG, .royalCountAVG {
+			background: white;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		.royalPriceAVG2, .royalCountAVG2 {
+			background: white;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		
+		.totalPrice, .totalCount {
+			background: blue;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}	
+		.totalPriceAVG, .totalCountAVG {
+			background: white;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		.totalPriceAVG2, .totalCountAVG2 {
+			background: white;
+			transition-duration: 5s;
+			width: 0px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		
+		.priceColorChange, .countColorChange {
+			background: white;
+			transition-duration: 5s;
+			width: 1px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+		.priceColorChange2, .countColorChange2 {
+			background: white;
+			transition-duration: 5s;
+			width: 1px;
+			color: white;
+			margin-left: -5px;
+			overflow: hidden;
+		}
+
+
+
+		.totalBox {
+			margin-top: 20px;
+    		
+    		    margin-bottom: 30px;
+    text-align: center;
+		}
+		
+		#changeBtn {
+		    font-size: 40px;
+
+   		 margin-left: -5px;
+   		 transition-duration: 1s;
+		}
+		#priceAndCount {
+	    background: #193f6e;
+    	color: white;
+    	font-size: 40px;
+    	
+    	margin-bottom: 15px;
+    	margin-left: -3px;
+    	
+		}
+		#changeBtn:hover {
+		color: white;
+		background: #193f6e;
+		cursor: pointer;
+		}
+		
+
+		#selectPrice, #selectCount{
+		    
+		    border-top: 1px solid #193f6e;
+    border-bottom: 1px solid #193f6e;
+    border-right: 1px solid #193f6e;
+    padding-left: 64px;
+		}
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

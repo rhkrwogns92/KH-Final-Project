@@ -1,0 +1,97 @@
+@charset "UTF-8";
+.hotelHugWrap {
+    width: 1245px;
+	margin: 0 auto;
+	padding: 4% 0;
+}
+
+
+.hotelHugWrap .contTitle {
+	width: 100%;
+}
+.hotelHugWrap .contTitle .name {
+	font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+}
+.hotelHugWrap .contTitle p {
+	font-size: 20px;
+    text-align: left;
+    margin: 15px 0 80PX 20px;
+}
+
+
+.hotelHugWrap>.innerBox>.roomWrap {
+    border: 0.5px solid #193f6e;
+    height: 465px;
+    margin-bottom: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.imageBox {
+    position: absolute;
+    /* width: 767px;
+            height: 463px; */
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.imageBox>img {
+    width: 850px;
+    height: 463px;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent {
+    height: 465px;
+    padding: 55px 40px 40px;
+    margin-left: 850px;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomTitle {
+    color: #193f6e;
+    line-height: 1.5;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomTitle>span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomInfo {
+    margin-top: 20px;
+    padding: 15px 0;
+    border-top: 1px solid #193f6e;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomInfo>p {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 65px;
+    line-height: 22px;
+    color: #999;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomInfo>p>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-weight: bold;
+    color: #666;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomInfo>.buttonTypeSmall {
+    border: 1px solid #193f6e;
+    padding: 15px 24px;
+    color: #193f6e;
+    position: absolute;
+    bottom: 40px;
+}
+
+.hotelHugWrap>.innerBox>.roomWrap>.roomContent>.roomInfo>a:hover {
+    text-decoration: none;
+    background-color: #193f6e;
+    color: white;
+}
